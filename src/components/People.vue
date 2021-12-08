@@ -1,14 +1,14 @@
 <template>
   <ul>
     <li v-for="(person, i) in peopleList" :key="i">
-      <a :href="`/character/${person.url}`">{{ person.name }}</a>
+      <router-link :to="{ name: 'Character', params: { url: person.url } }">{{ person.name }}</router-link>
     </li>
   </ul>
 </template>
 
 <script>
 export default {
-  props: ["peopleList"],
+  props: ['peopleList'],
 }
 </script>
 

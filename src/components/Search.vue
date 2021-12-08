@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: "Search",
-  props: ["value"],
+  name: 'Search',
+  props: ['value'],
 }
 </script>
